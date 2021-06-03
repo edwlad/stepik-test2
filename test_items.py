@@ -2,9 +2,7 @@ import pytest
 import time
 
 links = [
-    # следующий линк - это линк из задания
     'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/',
-    # следующий линк - ошибка. Книги нет в продаже - значит нет кнопки добавить в корзину
     'http://selenium1py.pythonanywhere.com/catalogue/hackers-painters_185/'
 ]
 
