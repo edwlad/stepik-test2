@@ -59,7 +59,7 @@
 
 ### Ошибка USB
 
-Вариант исключения вывода в консоль ошибки USB **usb_device_handle_win.cc:1054** в Windows 10 для Chrome:
+Вариант исключения вывода в консоль ошибки USB **usb_device_handle_win.cc:...** в Windows 10 для Chrome:
 
 ```python
 options = webdriver.ChromeOptions()
