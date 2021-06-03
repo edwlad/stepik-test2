@@ -59,11 +59,12 @@
 
 ### Ошибка USB
 
-Вариант исключения вывода в консоль ошибки USB **usb_device_handle_win.cc:...** в Windows 10 для Chrome:
+Вариант исключения вывода в консоль ошибки USB **usb_device_handle_win.cc:...** в Windows 10 для Chrome ([источник](https://stackoverflow.com/questions/11613869/how-to-disable-logging-using-selenium-with-python-binding)):
 
 ```python
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
+driver = webdriver.Chrome(options=options)
 ```
 
 ### MS Edge и selenium v3
