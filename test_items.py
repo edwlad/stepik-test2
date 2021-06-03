@@ -12,8 +12,8 @@ links = [
 @pytest.mark.parametrize('link', links)
 def test_find_add_to_basket_button(browser, link):
     browser.get(link)
-    curr_language = browser.execute_script("return window.navigator.userLanguage || window.navigator.language")
-    find_buttons = browser.find_elements_by_css_selector("#add_to_basket_form .btn-add-to-basket")
+    curr_language = browser.execute_script('return window.navigator.language || window.navigator.userLanguage')
+    find_buttons = browser.find_elements_by_css_selector('#add_to_basket_form .btn-add-to-basket')
     assert len(find_buttons) > 0, 'Не найдена кнопка добавления в корзину'
     assert len(find_buttons) < 2, 'Кнопка добавления в корзину не уникальна'
     if 'fr' in curr_language:
